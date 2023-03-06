@@ -1,7 +1,7 @@
 package com.nigelliang.fibonacciserver;
 
 public class FibonacciCompute {
-    long compute(long i) {
+    long compute(int i) {
         if (i == 0) {
             return 0;
         } else if (i == 1) {

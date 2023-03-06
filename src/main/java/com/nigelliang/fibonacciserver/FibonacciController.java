@@ -17,7 +17,7 @@ public class FibonacciController {
     }
 
     @GetMapping("/fibonacci/{number}")
-    ResponseEntity<FibonacciResponse> compute(@PathVariable Long number) {
+    ResponseEntity<FibonacciResponse> compute(@PathVariable Integer number) {
         Instant start = Instant.now();
         long result = fibCompute.compute(number);
         Instant end = Instant.now();
